@@ -81,7 +81,7 @@ class SelectorCtrl(wx.BoxSizer):
     type = SelectorCtrl.choices[self.typeCtrl.GetValue()]
     return type + self.argCtrl.GetValue() if type[-1] == ':' else type
 
-class ColorPickerCtrl(wx.ColorPickerCtrl):
+class ColorPickerCtrl(wx.ColourPickerCtrl):
   def __init__(self, panel, color, *args, **kwargs):
     super(ColorPickerCtrl, self).__init__(panel, *args, **kwargs)
     self.SetColour(color)
